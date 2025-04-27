@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -61,4 +61,25 @@ button:hover {
   font-style: italic;
   color: #6a6a8e;
   font-size: 1.1em;
+}
+
+/* 🔥🔥 MOBILE FRIENDLY TIME 🔥🔥 */
+@media (max-width: 600px) {
+  body {
+    height: auto;
+    padding: 40px 20px;
+    overflow: auto;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .message, .hidden, .quote {
+    font-size: 1em;
+  }
 }
